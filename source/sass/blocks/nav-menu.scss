@@ -21,7 +21,10 @@
 }
 
 .nav-menu--no-js .nav-menu__list {
-  position: static;
+  @media (max-width: $mobile-width-only) {
+    position: static;
+    display: block;
+  }
 }
 
 .nav-menu__item {
