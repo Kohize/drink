@@ -24,8 +24,4 @@ html {
 
 .main-container {
   position: relative;
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
 }
