@@ -1,5 +1,7 @@
 .nav-menu--closed .nav-menu__list {
-  display: none;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .nav-menu__list {
