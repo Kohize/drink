@@ -1,0 +1,26 @@
+.footer {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 223px 222px 223px;
+    column-gap: 30px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 317px 318px 317px;
+    column-gap: 30px;
+    margin: 0;
+  }
+}

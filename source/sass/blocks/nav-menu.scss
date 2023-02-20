@@ -1,0 +1,130 @@
+.nav-menu--closed .nav-menu__list {
+  display: none;
+}
+
+.nav-menu__list {
+  padding: 0;
+  margin: 0;
+  top: 60px;
+  left: 0;
+  list-style-type: none;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+  }
+}
+
+.nav-menu--no-js .nav-menu__list {
+  position: static;
+}
+
+.nav-menu__item {
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+    }
+  }
+}
+
+.nav-menu__link {
+  display: block;
+  text-decoration: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  min-width: 320px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  min-height: 61px;
+  letter-spacing: 0.02em;
+  box-sizing: border-box;
+  padding: 20px 0 21px 0;
+
+  &:active {
+    background: #f0ebff;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+    padding: 32px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      color: #7859cf;
+      background: #ffffff;
+    }
+  }
+}
+
+.nav-menu__link--active {
+  @media (min-width: $tablet-width) {
+    color: #7859cf;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 103px;
+      height: 2px;
+      right: -3px;
+      background-color: #7859cf;
+      bottom: 0;
+    }
+  }
+}
+
+.nav-menu--no-js .nav-menu__button--toggle {
+  display: none;
+}
+
+.nav-menu--no-js .header {
+  margin-bottom: 244px;
+}
+
+.nav-menu__button {
+  border: 0;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  cursor: pointer;
+  background-color: #ffffff;
+
+  &:active {
+    background: #f0ebff;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav-menu--closed .nav-menu__button--toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  width: 16px;
+  height: 12px;
+  background: url("../../img/svg/menu-toggle.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-menu--opened .nav-menu__button--toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 12px;
+  height: 12px;
+  background: url("../../img/svg/menu-close.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

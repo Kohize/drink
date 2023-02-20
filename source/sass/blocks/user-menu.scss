@@ -1,0 +1,96 @@
+.user-menu {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 41px;
+  }
+}
+
+.user-menu__button {
+  text-decoration: 0;
+  border: 0;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 0;
+
+  &:active {
+    background: #f0ebff;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px 32px 44px;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #333333;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #7859cf;
+    }
+  }
+}
+
+.user-menu__button--profile {
+  @media (min-width: $desktop-width) {
+    margin: 0 21px 0 0;
+  }
+}
+
+.user-menu__button--profile::before {
+  content: "";
+  position: absolute;
+  background: url("../../img/svg/menu-profile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 22px;
+  left: 22px;
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+  }
+}
+
+.user-menu__button--profile:hover::before,
+.user-menu__button--profile:focus::before,
+.user-menu__button--profile:active::before {
+  background: url("../../img/svg/menu-profile-hover.svg");
+}
+
+.user-menu__button--cart::before {
+  content: "";
+  position: absolute;
+  background: url("../../img/svg/menu-cart.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 22px;
+  left: 22px;
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+  }
+}
+
+.user-menu__button--cart:hover::before,
+.user-menu__button--cart:focus::before {
+  background: url("../../img/svg/menu-cart-hover.svg");
+}

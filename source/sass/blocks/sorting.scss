@@ -1,0 +1,42 @@
+.sorting {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    margin: 0 0 45px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 90px;
+  }
+}
+
+.sorting__filter {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 10px 0 0;
+  }
+}
+
+.sorting__select {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7859cf;
+
+  @media (min-width: $desktop-width) {
+    width: 150px;
+  }
+}

@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 80px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.header__info {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    font-family: "Montserrat", "Arial", sans-serif;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    margin: 0 163px 0 0;
+  }
+}
+
+.header__logo-wrapper {
+  margin: 0 88px 0 0;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 66px 0 0;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 20px 0 0;
+    padding-left: 40px;
+  }
+}
+
+.header__image {
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 86px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
